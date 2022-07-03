@@ -2,6 +2,8 @@ import random
 yourwin=0
 pcwin=0
 life=10
+print("-------------------------- Sanke Water Gun Game --------------------------\n")
+
 while(True):
     if life>=1:
         list = ["snake", "water", "gun"]
@@ -10,7 +12,7 @@ while(True):
         choose = input()
         if choose=="g":
             life = life - 1
-            print(choice)
+            print(f"Computer choosed {choice}")
             if choice=="snake":
                 print("you got 1 point")
                 yourwin=yourwin+1
@@ -19,10 +21,10 @@ while(True):
                 pcwin=pcwin+1
             else:
                 print("its a tie")
-            print(f'Number of lifes left:-->{life}')
+            print(f'Number of lifes left:-->{life} out of 10\n')
         elif choose=="w":
             life = life - 1
-            print(choice)
+            print(f"Computer choosed {choice}")
             if choice=="gun":
                 print("you got 1 point")
                 yourwin=yourwin+1
@@ -31,10 +33,10 @@ while(True):
                 pcwin = pcwin + 1
             else:
                 print("its a tie")
-            print(f'Number of lifes left:-->{life}')
+            print(f'Number of lifes left:-->{life} out of 10\n')
         elif choose=="s":
             life = life - 1
-            print(choice)
+            print(f"Computer choosed {choice}")
             if choice=="water":
                 print("you got 1 point")
                 yourwin=yourwin+1
@@ -43,7 +45,7 @@ while(True):
                 pcwin = pcwin + 1
             else:
                 print("its a tie")
-            print(f'Number of lifes left:-->{life}')
+            print(f'Number of lifes left:-->{life} out of 10\n')
         else:
             print("Wrong input")
     elif life==0:
